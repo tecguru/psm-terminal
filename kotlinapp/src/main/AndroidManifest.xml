@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stripe.example">
+
+    <application
+        android:name=".StripeTerminalApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/launcher"
+        android:label="Perry Stone"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Example"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ManualpaymentActivity"/>
+        <activity android:name=".SelectionActivity"/>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>
